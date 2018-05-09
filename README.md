@@ -47,4 +47,4 @@ WHERE        (dbo.JobHistory.Action = 'Current')) as CurrentFieldStaff1  on Plan
 								as PalntStaffDate on CurrentFieldStaff1.JobId = PalntStaffDate.JobId and CurrentFieldStaff1.CreatedTs = PalntStaffDate.DateCurrent
 
 
-WHERE OpsJobs.DateFaultReported >= '2017-01-01 00:00:00.000' and OpsJobs.DateFaultReported < '2017-09-01 00:00:00.000'
+WHERE OpsJobs.DateFaultReported >= '2017-01-01 00:00:00.000' and OpsJobs.DateFaultReported < '2017-09-01 00:00:00.000' and PlantJobs.FFName like '%Backfill%'
